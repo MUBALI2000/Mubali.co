@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUBALI.co</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#000; color:#fff; }
+    nav a { margin:0 15px; color:#fff; text-decoration:none; }
+    .hero { text-align:center; padding:100px 20px; background:#222; color:#fff; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; padding:50px 20px; }
+    .card { background:#fff; padding:20px; text-align:center; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:transform 0.3s; cursor:pointer; }
+    .card:hover { transform:scale(1.05); }
+    footer { background:#000; color:#fff; padding:30px; text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MUBALI.co</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Fitness</a>
+      <a href="#">Bartending</a>
+      <a href="#">Photography</a>
+      <a href="#">Music</a>
+      <a href="#">Shop</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Everything MUBALI: Fitness, Music, Drinks, Photography & More</h2>
+    <p>Click below to explore each service</p>
+  </section>
+
+  <section class="grid">
+    <div class="card" onclick="location.href='#'">JOMBA FITNESS</div>
+    <div class="card" onclick="location.href='#'">Bartending & Beverage Packages</div>
+    <div class="card" onclick="location.href='#'">MUBALI Photography & Video</div>
+    <div class="card" onclick="location.href='#'">JOMBA RECORDS</div>
+    <div class="card" onclick="location.href='#'">Merch & Branding</div>
+  </section>
+
+  <footer>
+    &copy; 2026 MUBALI.co | All Rights Reserved
+  </footer>
+</body>
+</html>
