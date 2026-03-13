@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUBALI.co</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Reset & Base */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Poppins', sans-serif; background:#f5f5f5; color:#222; line-height:1.6; }
+a { text-decoration:none; color: inherit; }
+
+/* Header */
+header { background:#111; color:#fff; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:1000; }
+header h1 { font-weight:700; cursor:pointer; }
+nav a { margin-left:20px; font-weight:500; transition:color 0.3s; }
+nav a:hover { color:#f39c12; }
+
+/* Hero */
+.hero { background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; color:#fff; height:90vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:0 20px; }
+.hero h2 { font-size:3rem; margin-bottom:20px; }
+.hero p { font-size:1.2rem; margin-bottom:30px; }
+
+/* Grid Cards */
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; padding:60px 40px; }
+.card { background:#fff; border-radius:15px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.15); cursor:pointer; transition:transform 0.3s, box-shadow 0.3s; text-align:center; }
+.card:hover { transform:translateY(-10px); box-shadow:0 12px 25px rgba(0,0,0,0.2); }
+.card img { width:100%; height:200px; object-fit:cover; }
+.card h3 { padding:20px 10px 10px; font-size:1.5rem; }
+.card p { padding:0 10px 20px; font-size:1rem; color:#555; }
+
+/* Footer */
+footer { background:#111; color:#fff; text-align:center; padding:40px 20px; margin-top:40px; }
+footer p { margin-bottom:10px; font-size:0.9rem; }
+footer a { color:#f39c12; margin:0 5px; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+<h1 onclick="window.location.href='#hero'">MUBALI.co</h1>
+<nav>
+<a href="#fitness">Fitness</a>
+<a href="#bartending">Bartending</a>
+<a href="#photography">Photography</a>
+<a href="#music">Music</a>
+<a href="#shop">Shop</a>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+<h2>Everything MUBALI</h2>
+<p>Fitness, Music, Drinks, Photography & Merchandise – All in one place</p>
+<p>Scroll down to explore our services 👇</p>
+</section>
+
+<!-- Services Grid -->
+<section class="grid">
+
+<!-- JOMBA FITNESS -->
+<div class="card" id="fitness" onclick="alert('Redirect to JOMBA FITNESS page')">
+<img src="https://images.unsplash.com/photo-1554284126-9f1f4fbc0a77?auto=format&fit=crop&w=800&q=80" alt="Fitness">
+<h3>JOMBA FITNESS</h3>
+<p>Personal training, group sessions & tailored fitness programs.</p>
+</div>
+
+<!-- Bartending & Beverage -->
+<div class="card" id="bartending" onclick="alert('Redirect to Bartending page')">
+<img src="https://images.unsplash.com/photo-1612392061788-6a61d6e0e32e?auto=format&fit=crop&w=800&q=80" alt="Bartending">
+<h3>Bartending & Beverage Packages</h3>
+<p>Private events, Sunday bookings, and full coverage service.</p>
+</div>
+
+<!-- Photography & Video -->
+<div class="card" id="photography" onclick="alert('Redirect to Photography page')">
+<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" alt="Photography">
+<h3>MUBALI Photography & Video</h3>
+<p>Professional photography and video services for all occasions.</p>
+</div>
+
+<!-- JOMBA RECORDS -->
+<div class="card" id="music" onclick="alert('Redirect to Music page')">
+<img src="https://images.unsplash.com/photo-1590608897129-79e04e2ef8f6?auto=format&fit=crop&w=800&q=80" alt="Music">
+<h3>JOMBA RECORDS</h3>
+<p>Music videos, behind-the-scenes, and all music-related content.</p>
+</div>
+
+<!-- Shop / Merchandise -->
+<div class="card" id="shop" onclick="alert('Redirect to Shop page')">
+<img src="https://images.unsplash.com/photo-1598300056510-50f3154fa037?auto=format&fit=crop&w=800&q=80" alt="Shop">
+<h3>Merchandise & Branding</h3>
+<p>Branded merchandise, apparel, and custom products.</p>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2026 MUBALI.co | All Rights Reserved</p>
+<p>Follow us:
+<a href="#">Instagram</a> |
+<a href="#">TikTok</a> |
+<a href="#">YouTube</a>
+</p>
+</footer>
+
+</body>
+</html>
